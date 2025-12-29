@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkhtmv_docs=globalThis.webpackChunkhtmv_docs||[]).push([[1903],{1912(s){s.exports=JSON.parse('{"blogBasePath":"/htmv-docs/blog","blogTitle":"Blog","authorsListPath":"/htmv-docs/blog/authors"}')}}]);
