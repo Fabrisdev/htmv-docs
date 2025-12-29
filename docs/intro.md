@@ -4,8 +4,11 @@ sidebar_position: 1
 
 # Installation
 
-# Precautions
+:::danger[Precautions]
+
 HTMV currently only works on Bun. Routing on Node.js is broken. Please take note and only use Bun with it while I'm working on Node.js support.
+
+:::
 
 # Getting started
 It's simple! Just use htmv's CLI!
