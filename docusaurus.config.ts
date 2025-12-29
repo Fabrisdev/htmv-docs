@@ -5,8 +5,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-	title: "My Site",
-	tagline: "Dinosaurs are cool",
+	title: "HTMV",
+	tagline: "A simple yet fast web framework.",
 	favicon: "img/favicon.ico",
 
 	// Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
