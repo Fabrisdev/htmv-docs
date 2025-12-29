@@ -2,22 +2,29 @@
 sidebar_position: 6
 ---
 
-# Congratulations!
+# Interpolation
+As mentioned briefly at the start of the docs. One of HTMV's main features is interpolation.
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+What's that? Put simply, have a value on the backend you wish to show when rendering the view? Just use interpolation!
 
-Docusaurus has **much more to offer**!
+Here's a simple example which lets you randomly show different strings on page load:
+```ts
+// index.ts route
+import { view } from 'htmv'
 
-Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
+export default () => {
+	const messages = ["Welcome back!", "How was your day?", "We're glad you're back."]
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
+	return view('example', {
+		message: getRandomValue(messages) // the message variable will get sent to the view for you to use freely.
+	})
+}
 
-## What's next?
-
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+function getRandomValue(arr: Array) {
+	return arr[Math.floor(Math.random() * arr.length)]
+}
+```
+```html
+<!-- example.html view -->
+<p>{message}</p> <!-- here we are accessing the message variable -->
+```
