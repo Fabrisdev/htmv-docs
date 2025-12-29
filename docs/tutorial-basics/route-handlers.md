@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 
 # Route handlers
-Following with `APIs`, you sometimes want a single endpoint for your users, for example `/api/user` and depending on the method used on the request act accordingly. For example, create an user with method `POST`, get users with method `GET` and more. 
+Sometimes you want a single endpoint for your users, for example `/api/user` and depending on the method used on the request act accordingly. For example, create an user with method `POST`, get users with method `GET` and more. 
 
 Normally you'd do that programatically like the following:
 ```ts
