@@ -6,7 +6,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 const config: Config = {
 	title: "HTMV",
-	tagline: "A simple yet fast web framework.",
+	tagline: "Your simple yet fast web framework.",
 	favicon: "img/favicon.ico",
 
 	// Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
