@@ -103,6 +103,10 @@ const config: Config = {
 							label: "Tutorial",
 							to: "/docs/installation",
 						},
+						{
+							label: "Features",
+							to: "/docs/category/features",
+						},
 					],
 				},
 				{
