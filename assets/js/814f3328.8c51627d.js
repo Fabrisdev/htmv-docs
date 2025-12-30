@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkhtmv_docs=globalThis.webpackChunkhtmv_docs||[]).push([[472],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/blog/welcome","unlisted":false,"date":"2025-12-29T00:00:00.000Z"}]}')}}]);
