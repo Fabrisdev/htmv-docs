@@ -8,12 +8,12 @@ HTMV is a web framework for server-side rendering. It features an HTML-like temp
 easily build fast and safe applications through explicit data flow. You know all the data passed, no hidden secrets.
 Opposite to many other web frameworks, no code evaluation is allowed which leads to safer and more predictable rendering.
 
-Features:
+## Features:
 - 0 javascript sent by default to the client.
 - File system based routing.
 - Simplicity.
 
-# When/For what should I use it?
+## When/For what should I use it?
 First things first, it isn't for everyone.
 So let's start with some quick questions first.
 1. Your site needs reactivity? -> **HTMV is not for you**
