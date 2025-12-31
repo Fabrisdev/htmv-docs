@@ -10,7 +10,7 @@ Our app will be able to:
 3. Delete completed tasks
 
 ## After building it
-After this tutorial, you should be able to try and add **updating tasks** into it.
+After this tutorial, you should be able to try and add **updating tasks** into it. If you're feeling like trying a challenge, give it a try!
 
 ## Got lost? Something isn't working?
 The whole code for this tutorial is available on [GitHub](#). Go give it a read if you're lost or even shoot me an issue on [HTMV's docs repo](#) if you think the tutorial was too hard to follow! Feedback is always welcome.
