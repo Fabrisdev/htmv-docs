@@ -98,8 +98,8 @@ const config: Config = {
 					title: "Docs",
 					items: [
 						{
-							label: "Installation",
-							to: "/docs/installation",
+							label: "Getting started",
+							to: "/docs/getting-started/what-is-htmv",
 						},
 						{
 							label: "Features",
