@@ -10,5 +10,7 @@ Opposite to other web frameworks, no code evaluation is allowed leading to safer
 
 Features:
 - 0 javascript sent by default to the client.
+- File system based routing.
 - Simplicity.
-- No hidden secrets.
+
+# When/For what should I use it?
