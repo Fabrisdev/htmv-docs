@@ -43,4 +43,5 @@ These are items you might find useful.
   This is where you add or update packages and configure project scripts.
 :::
 
-In short, the three folders we'll be working with will be `routes`, `views` and `public`.
+In short, the three folders we'll be working with will be `routes`, `views` and `public`.  
+Starting to familiarize with the structure already? If so, let's jump just straight into coding!
