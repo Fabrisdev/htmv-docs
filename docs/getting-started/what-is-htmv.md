@@ -11,7 +11,7 @@ Opposite to many other web frameworks, no code evaluation is allowed which leads
 ## Features
 - **0 javascript sent by default**
 - **File system based routing**
-- **Server-side rendering by design**
+- **Code generation**
 - **Simplicity through an HTML-like templating system**
 - **Easy rest API creation using route handlers**
 - **Low runtime overhead (built on Elysia and Bun)**
