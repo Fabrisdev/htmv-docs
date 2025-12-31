@@ -19,4 +19,8 @@ These are items you usually don’t need to interact with.
 These are items you might find useful.
 - `public`  
   Any files put here will be served at `/public/`. This is useful for static files such as images, javascript code, CSS styles, and others.
+- `routes`  
+  All your routes will be defined inside here. We'll go over this later on this tutorial.
+- `views`  
+  All your views/components will be defined inside here. We'll go over this later on this tutorial.
 :::
