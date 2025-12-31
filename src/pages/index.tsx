@@ -19,7 +19,7 @@ function HomepageHeader() {
 				<div className={styles.buttons}>
 					<Link
 						className="button button--secondary button--lg"
-						to="/docs/installation"
+						to="/docs/getting-started/what-is-htmv"
 					>
 						Get started
 					</Link>
