@@ -11,7 +11,7 @@ HTMV currently only works on Bun. Routing on Node.js is broken. Please take note
 :::
 
 # Getting started
-It's simple! Just use htmv's CLI!
+It's simple! Just use htmv's [CLI](/docs/getting-started/what-is-htmv)!
 ```bash
 bunx htmv@latest new my_cool_project
 ```
