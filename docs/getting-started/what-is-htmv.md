@@ -9,7 +9,7 @@ easily build fast and safe applications through explicit data flow. You know all
 Opposite to many other web frameworks, no code evaluation is allowed which leads to safer and more predictable rendering.
 
 ## Features:
-- 0 javascript sent by default to the client.
+- 0 javascript sent by default.
 - File system based routing.
 - Simplicity.
 
