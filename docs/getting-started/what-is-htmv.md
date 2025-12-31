@@ -17,7 +17,7 @@ Opposite to many other web frameworks, no code evaluation is allowed which leads
 First things first, it isn't for everyone.
 So let's start with some quick questions first.
 1. Your site needs reactivity? -> **HTMV is not for you**
-2. Do you need an SPA-like experience with client-side routing? -> **HTMV *most likely* is not for you** *(altought you can get it to work)*
+2. Do you need an SPA-like experience with client-side routing? -> **HTMV is *most likely* not for you** *(altought you can get it to work)*
 3. Do you want full control over every file sent to the user? -> **HTMV is a good fit**
 4. Is most of your UI renderable in the server? -> **HTMV is a good fit**
 5. Do you value simplicity, safety, and predictability over abstraction? -> **HTMV is a good fit**
