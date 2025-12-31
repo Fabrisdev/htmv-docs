@@ -3,6 +3,10 @@ sidebar_position: 4
 ---
 
 # Understanding the project structure
+:::info
+If you’re already familiar with Bun/Node.js and modern web frameworks, feel free to skip ahead to the next section.
+:::
+
 Before coding, let's take a moment to familiarize ourselves with HTMV's default project structure.
 
 ![Image of a default project structure](/img/project-structure.png)
@@ -38,3 +42,5 @@ These are items you might find useful.
   Defines the project metadata, scripts, and dependencies.  
   This is where you add or update packages and configure project scripts.
 :::
+
+In short, the three folders we'll be working with will be `routes`, `views` and `public`.
