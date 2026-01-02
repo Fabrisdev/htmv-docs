@@ -30,3 +30,20 @@ export function GET() {
 ```
 Simple, right? We simply must have an exported function called `GET` and inside it we return whatever we wish to render when the user visits that page. In this case, we make use of the `view` function to render our view, but we could also have just rendered plain text by just returning a string.
 
+`GET` however, is not the only available method to use. Another common one is `ALL`, which simply means it doesn't matter what method the user uses when making the request. HTMV considers it the default method and so you must use the `default` keyword when working with it:
+```ts
+import { view } from 'htmv'
+ 
+export default function MyRoute() {
+  return view('list')
+}
+```
+
+Note how the name of the function is no longer of importance. And so we may as well just use an arrow function:
+```ts
+import { view } from 'htmv'
+ 
+export default () => {
+  return view('list')
+}
+```
