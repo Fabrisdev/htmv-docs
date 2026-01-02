@@ -50,3 +50,14 @@ export default () => {
 }
 ```
 For more information on the available methods, check out the dedicated [route handlers section](/docs/features/route-handlers).
+## Your final code
+I'm sorry if it was too much information to take and you got lost half-way through. This section is to make sure we're on the same foot.  
+Your final code should have been placed inside `routes/index.ts` and it should contain the following:
+```ts
+import { view } from 'htmv'
+ 
+export default () => {
+  return view('list')
+}
+```
+If that is correct, good news! You should finally be able to see your webpage up and running. Start the server with `bun dev` and visit `localhost:3000` to do so! 
