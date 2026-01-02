@@ -20,3 +20,13 @@ For that, we'd have to first create a `blog` folder and inside it create a `welc
 ## Route handlers
 That's good and all, but how do I tell it which view to render when the user visits that route?
 
+Good question. For that, we make use of route handlers. For example, if we wish to send it whenever a `GET` request is made on that route we can do so like this inside our just created `index.ts`:
+```ts
+import { view } from 'htmv'
+ 
+export function GET() {
+  return view('list') // list is the name of the view we had just created. Make sure not to include the .html extension
+}
+```
+Simple, right? We simply must have an exported function called `GET` and inside it we return whatever we wish to render when the user visits that page. In this case, we make use of the `view` function to render our view, but we could also have just rendered plain text by just returning a string.
+
