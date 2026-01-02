@@ -17,6 +17,8 @@ The file path determines the URL, and the exported functions determine how that 
 Let's say we would like to show our cool view we just made in `localhost:3000/blog/welcome/`
 For that, we'd have to first create a `blog` folder and inside it create a `welcome` folder. Finally, for HTMV to actually register it as a route we must create an `index.ts` file inside it.
 
+For our TODO project however, we only need to show it on the `/` route and therefore the `index.ts` file should be placed directly on the `routes` folder.
+
 ## Route handlers
 That's good and all, but how do I tell it which view to render when the user visits that route?
 
@@ -47,3 +49,4 @@ export default () => {
   return view('list')
 }
 ```
+For more information on the available methods, check out the dedicated [route handlers section](/docs/features/route-handlers).
