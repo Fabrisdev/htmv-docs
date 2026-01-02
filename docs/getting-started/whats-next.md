@@ -74,9 +74,12 @@ But since our `tasks` prop is also an Array that also won't work. Instead, we ca
 ```
 Yes! This last one does work. However, we could make it a bit easier to read by making use of an ordered or unordered list:
 ```html
-<o>
-<For task in tasks>
-  <p>Title: {task.title}</p>  
-  <p>Description: {task.description}</p>  
-</For>
+<ol>
+  <For task in tasks>
+    <li>
+      <h2>Title: {task.title}</h2>  
+      <p>Description: {task.description}</p>  
+    </li>
+  </For>
+</ol>
 ```
