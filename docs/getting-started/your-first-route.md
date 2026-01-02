@@ -41,7 +41,7 @@ export default function MyRoute() {
 }
 ```
 
-Note how the name of the function is no longer of importance. And so we may as well just use an arrow function:
+Note how the name of the function is no longer of importance to us. And so we may as well just use an arrow function:
 ```ts
 import { view } from 'htmv'
  
