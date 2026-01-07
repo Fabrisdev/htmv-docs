@@ -90,3 +90,13 @@ We could do just as we did and simply add a third line inside our `<li>` contain
 ```html
 <p>Is it done? {task.done}</p>
 ```
+However, it would be nicer having something that can either be toggled ON or OFF depending on whether our prop is truthy or falsy. Since right now it would simply render as
+```html
+<p>Is it done? true</p> <!-- Or false -->
+```
+For example, a checkbox would fit this perfectly! (`<input type="checkbox">`)  
+We could `bind` our `task.done` prop to its `checked` attribute! However, when we go do so...
+```html
+<input type="checkbox" checked={task.done}>
+```
+We realize our webpage marks every task as checked no matter whether it actually is done or not.  
