@@ -157,3 +157,5 @@ export default () => {
   return view('list', { tasks })
 }
 ```
+If that's what it looks like and it's working then you can go ahead onto the next chapter!  
+Remember if you're having trouble keeping up you can also check out the entire code on GitHub.
