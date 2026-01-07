@@ -110,7 +110,7 @@ And in order to use it, you simply have to add a `:` to the start of it.
 However, note that in order to use the special syntax it is needed to remove the double quotes.
 
 ## Final code
-Sorry for the long rant! In the end, your code should be looking like this:
+Sorry for the long rant! In the end, your view should be looking like this:
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -130,4 +130,30 @@ Sorry for the long rant! In the end, your code should be looking like this:
     </ol>
   </body>
 </html>
+```
+And your route like this:
+```ts
+import { view } from 'htmv'
+ 
+type Task = {
+  title: string
+  description: string
+  done: boolean
+}
+
+export default () => {
+  const tasks: Task[] = [
+    {
+      title: "Clean the room",
+      description: "Perhaps I should clean my room...",
+      done: false
+    },
+    {
+      title: "Take out the dog",
+      description: "I should take the dog to the park later",
+      done: false
+    }
+  ]
+  return view('list', { tasks })
+}
 ```
