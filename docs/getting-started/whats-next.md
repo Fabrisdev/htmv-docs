@@ -84,3 +84,9 @@ Yes! This last one does work. However, we could make it a bit easier to read by 
 </ol>
 ```
 ## Attribute binding
+Note however how we're still not using our `{task.done}` prop. This was done intentionally since rendering this prop will be a bit different since it's a boolean instead of a string.
+
+We could do just as we did and simply add a third line inside our `<li>` containing
+```html
+<p>Is it done? {task.done}</p>
+```
