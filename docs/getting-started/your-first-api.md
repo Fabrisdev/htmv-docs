@@ -56,3 +56,4 @@ Finally, if you need your API to appear after `localhost:3000/api`, remember to 
 
 ## Back to our project
 Okay! Now that we learned all this, let's apply it in our project.
+We could make a new route file inside `/api/tasks` for it, but since this project's only entity are tasks we might aswell just stick to working in our current file
