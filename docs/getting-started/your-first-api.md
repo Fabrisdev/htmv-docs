@@ -34,3 +34,19 @@ export async function POST(params: RouteParams) {
   return ok()
 }
 ```
+
+## Error handling
+But what if something goes wrong? For example, if the username is less than our required 6 letters long? We can simply do the following:
+```ts
+import type { RouteParams } from 'htmv'
+import { ok, badRequest } from 'htmv/http'
+
+export async function POST(params: RouteParams) {
+  const { username, email } = params.query;
+  if(typeof username === "string" && username.length >= 6) {
+    await addUser({ username, email }) // replace this with however it is done on your DB
+    return ok()
+  }
+  return badRequest("Username is either not present or is less than 6 characters long") // returns a 400 BAD REQUEST response
+}
+```
