@@ -108,3 +108,26 @@ And in order to use it, you simply have to add a `:` to the start of it.
 <input type="checkbox" :checked={task.done}>
 ```
 However, note that in order to use the special syntax it is needed to remove the double quotes.
+
+## Final code
+Sorry for the long rant! In the end, your code should be looking like this:
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TODO CRUD</title>
+  </head>
+
+  <body>
+    <ol>
+      <For task in tasks>
+        <li>
+          <h2>Title: {task.title}</h2>  
+          <p>Description: {task.description}</p>  
+          <input type="checkbox" :checked={task.done}>
+        </li>
+      </For>
+    </ol>
+  </body>
+</html>
+```
