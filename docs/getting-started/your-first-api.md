@@ -52,5 +52,7 @@ export async function POST(params: RouteParams) {
 ```
 Of course, you're also missing checking for the email, but I'll leave that as your homework.
 
+Finally, if you need your API to appear after `localhost:3000/api`, remember to create a folder named `api` inside the `routes` folder and work your way from there.
+
 ## Back to our project
 Okay! Now that we learned all this, let's apply it in our project.
