@@ -13,3 +13,13 @@ export async function GET() {
   return users
 }
 ```
+We could also have a `POST` method to add new users onto the DB.
+```ts
+import type { RouteParams } from 'htmv'
+
+export async function POST(params: RouteParams) {
+  const { username, email } = params.query;
+  await addUser({ username, email }) // replace this with however it is done on your DB
+  return ""
+}
+```
