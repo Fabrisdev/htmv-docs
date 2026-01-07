@@ -97,7 +97,14 @@ However, it would be nicer having something that can either be toggled ON or OFF
 For example, a checkbox would fit this perfectly! (`<input type="checkbox">`)  
 We could `bind` our `task.done` prop to its `checked` attribute! However, when we go do so...
 ```html
-<input type="checkbox" checked={task.done}>
+<input type="checkbox" checked="{task.done}">
 ```
 We realize our webpage marks every task as checked no matter whether it actually is done or not.  
 This is simply due to how HTML behaves. It does not check for the attribute's value and simply checks whether or not the attribute is set or not. 
+
+This is where HTMV has to step in in order to make it work. HTMV's views add a new special syntax for adding an attribute to an element ONLY IF thy prop assigned to it is truthy.  
+And in order to use it, you simply have to add a `:` to the start of it.
+```html
+<input type="checkbox" :checked={task.done}>
+```
+However, note that in order to use the special syntax it is needed to remove the double quotes.
