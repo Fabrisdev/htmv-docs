@@ -50,3 +50,7 @@ export async function POST(params: RouteParams) {
   return badRequest("Username is either not present or is less than 6 characters long") // returns a 400 BAD REQUEST response
 }
 ```
+Of course, you're also missing checking for the email, but I'll leave that as your homework.
+
+## Back to our project
+Okay! Now that we learned all this, let's apply it in our project.
