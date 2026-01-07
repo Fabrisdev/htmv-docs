@@ -23,3 +23,14 @@ export async function POST(params: RouteParams) {
   return ""
 }
 ```
+And since we don't actually wish to return a body, just a 200 OK response we might aswell use the built-in `ok()` response helper.
+```ts
+import type { RouteParams } from 'htmv'
+import { ok } from 'htmv/http'
+
+export async function POST(params: RouteParams) {
+  const { username, email } = params.query;
+  await addUser({ username, email }) // replace this with however it is done on your DB
+  return ok()
+}
+```
