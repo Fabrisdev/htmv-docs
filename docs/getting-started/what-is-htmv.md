@@ -23,6 +23,5 @@ So let's start with some quick questions first.
 2. Do you need an SPA-like experience with client-side routing? -> **HTMV is *most likely* not for you** *(although you can get it to work)*
 3. Do you want full control over every file sent to the user? -> **HTMV is a good fit**
 4. Is most of your UI renderable in the server? -> **HTMV is a good fit**
-5. Do you value simplicity, safety, and predictability over abstraction? -> **HTMV is a good fit**
 
 If you think HTMV looks like a good fit for your next project, head to the article ahead!
