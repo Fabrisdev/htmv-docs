@@ -100,3 +100,4 @@ We could `bind` our `task.done` prop to its `checked` attribute! However, when w
 <input type="checkbox" checked={task.done}>
 ```
 We realize our webpage marks every task as checked no matter whether it actually is done or not.  
+This is simply due to how HTML behaves. It does not check for the attribute's value and simply checks whether or not the attribute is set or not. 
