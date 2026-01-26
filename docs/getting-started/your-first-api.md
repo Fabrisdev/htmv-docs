@@ -88,3 +88,9 @@ export function POST(params: RouteParams) {
   })
 }
 ```
+
+If you've got here you should have started to understand how easy building APIs with HTMV is!
+
+:::tip Interested in API development on HTMV?
+If you're interested in reading more about them, you can take a look at our [Route Handler's article](/docs/features/route-handlers) as this guide won't continue covering them much longer.
+:::
