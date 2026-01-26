@@ -53,34 +53,3 @@ export async function POST(params: RouteParams) {
 Of course, you're also missing checking for the email, but I'll leave that as your homework.
 
 Finally, if you need your API to appear after `localhost:3000/api`, remember to create a folder named `api` inside the `routes` folder and work your way from there.
-
-## Back to our project
-Okay! Now that we learned all this, let's apply it in our project.
-We could make a new route file inside `/api/tasks` for it, but since this project's only entity are tasks we might aswell just stick to working in our current file.
-If you wish to split it into another route file then go ahead! Just remember to change the URL once we start trying out our API.
-
-```ts
-import { view } from 'htmv'
- 
-type Task = {
-  title: string
-  description: string
-  done: boolean
-}
-
-const tasks: Task[] = [] // No tasks by default
-
-export default () => {
-  return view('list', { tasks })
-}
-
-export function POST() {
-  tasks.push({
-    title: "My task",
-    description: "The description",
-    done: false
-  })
-}
-```
-
-I've simply moved our tasks variable out of the default function export so that we can access it globally. Finally, I've created a new POST method for our route which for now just creates a new task with some hard-coded attributes.
