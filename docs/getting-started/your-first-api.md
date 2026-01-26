@@ -38,3 +38,21 @@ I've simply moved our tasks variable out of the default function export so that 
 
 ## Reading params
 Of course we don't want to hard-code our task's data. Instead, we want to retrieve the required information from the `Request` and use that instead.
+
+```ts
+// ...
+import type { RouteParams } from 'htmv'
+import { badRequest } from 'htmv/http'
+
+export function POST(params: RouteParams) {
+  const { title, description } = params.query // Extract required fields from query params
+  if(typeof title !== "string") return badRequest("title required")
+  if(typeof description !== "string") return badRequest("description required")
+
+  tasks.push({
+    title,
+    description,
+    done: false // Task should always be uncompleted by default
+  })
+}
+```
