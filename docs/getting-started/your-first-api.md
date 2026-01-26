@@ -56,3 +56,6 @@ export function POST(params: RouteParams) {
   })
 }
 ```
+
+## Final code
+Okay! We're done for now. Our API is ready and so we can get to building our site with it.
