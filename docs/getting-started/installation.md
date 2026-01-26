@@ -21,7 +21,7 @@ This will create an htmv project on the folder `my_todo_app`. Dependencies are a
 Finally, open up `my_todo_app` on your editor of choice. We're ready to begin building!
 
 ## Plus: Using HTMV's vscode extension
-If you wish for syntax highlighting inside your `.htmv` files, you can install HTMV's Visual Studio Code extension. The extension also provides some code snippets for working with HTMV's special elements.
+If you wish for syntax highlighting inside your `.htmv` files, you can install HTMV's Visual Studio Code extension. The extension also provides some code snippets for working with HTMV's special tags.
 
 You can get it [on the Marketplace](https://marketplace.visualstudio.com/items?itemName=fabrisdev.htmv).
 
