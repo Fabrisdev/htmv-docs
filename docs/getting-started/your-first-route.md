@@ -27,7 +27,7 @@ Good question. For that, we make use of route handlers. For example, if we wish 
 import { view } from 'htmv'
  
 export function GET() {
-  return view('list') // list is the name of the view we had just created. Make sure not to include the .html extension
+  return view('list') // list is the name of the view we had just created. Make sure not to include the .htmv extension
 }
 ```
 Simple, right? We simply must have an exported function called `GET` and inside it we return whatever we wish to render when the user visits that page. In this case, we make use of the `view` function to render our view, but we could also have just rendered plain text by just returning a string.
