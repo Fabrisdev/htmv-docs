@@ -34,6 +34,7 @@ export async function POST(params: RouteParams) {
   return ok()
 }
 ```
+...Or simply don't return, as `200 OK` is the response by default.
 
 ## Error handling
 But what if something goes wrong? For example, if the username is less than our required 6 letters long? We can simply do the following:
