@@ -59,3 +59,32 @@ export function POST(params: RouteParams) {
 
 ## Final code
 Okay! We're done for now. Our API is ready and so we can get to building our site with it.
+```ts
+import { view } from 'htmv'
+import type { RouteParams } from 'htmv'
+import { badRequest } from 'htmv/http'
+ 
+type Task = {
+  title: string
+  description: string
+  done: boolean
+}
+
+const tasks: Task[] = [] // No tasks by default
+
+export default () => {
+  return view('list', { tasks })
+}
+
+export function POST(params: RouteParams) {
+  const { title, description } = params.query // Extract required fields from query params
+  if(typeof title !== "string") return badRequest("title required")
+  if(typeof description !== "string") return badRequest("description required")
+
+  tasks.push({
+    title,
+    description,
+    done: false // Task should always be uncompleted by default
+  })
+}
+```
