@@ -82,3 +82,5 @@ export function POST() {
   })
 }
 ```
+
+I've simply moved our tasks variable out of the default function export so that we can access it globally. Finally, I've created a new POST method for our route which for now just creates a new task with some hard-coded attributes.
